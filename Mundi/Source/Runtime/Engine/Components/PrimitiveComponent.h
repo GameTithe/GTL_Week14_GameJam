@@ -76,6 +76,9 @@ public:
     // ───── 직렬화 ────────────────────────────
     void Serialize(const bool bInIsLoading, JSON& InOutHandle) override;
 
+
+    virtual void OnCreatePhysicsState();
+
 protected:
     bool bIsCulled = false;
      

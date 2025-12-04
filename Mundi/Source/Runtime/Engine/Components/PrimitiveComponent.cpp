@@ -78,6 +78,11 @@ void UPrimitiveComponent::Serialize(const bool bInIsLoading, JSON& InOutHandle)
 	}
 }
 
+void UPrimitiveComponent::OnCreatePhysicsState()
+{
+
+}
+
 bool UPrimitiveComponent::IsOverlappingActor(const AActor* Other) const
 {
     if (!Other)
